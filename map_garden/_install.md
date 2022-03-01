@@ -27,3 +27,11 @@
 - save
 - test if game can load main.bundle.js, 
 	if you get a black screen, just undo the change with ctrl+z and check again if it is the right place.
+
+## tileset used
+- Bokou https://forums.rpgmakerweb.com/index.php?threads/bokous-freesources-added-gothic-tileset.48613/
+- Anokolisa https://anokolisa.itch.io/high-forest-assets-pack
+- ? https://centrorpg.com/index.php?topic=14770.0 (RPMaker tileset pack)
+- ? https://www.rpg-maker.fr/mv-tilesets.html (RPMaker tileset)
+
+I have tried to follow the design of the original map.
