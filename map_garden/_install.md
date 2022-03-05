@@ -49,7 +49,7 @@ _not formated_
 
 _formated_
 
-![image](https://user-images.githubusercontent.com/10463138/156074529-c97c4686-910c-40c6-8ed3-b6b5cb8cce93.png)
+![image](https://user-images.githubusercontent.com/10463138/156902729-8268e448-f21c-40ad-ac10-fefd14507a12.png)
 - save
 - test if game can load main.bundle.js, 
 	if you get a black screen, just undo the change with ctrl+z and check again if it is the right place.
