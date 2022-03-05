@@ -50,14 +50,14 @@
 	'destructibleChanceMax': 0x32,
 	'maxDestructibles': 0xa,
 	'BGTextureName': 'bg_forest',
-	'minimum': 0x32,
+	'minimum': 0x16,
 	'frequency': 0xbb8,
 	'enemies': ['BAT1', 'BAT2']
 }, {
 	'minute': 0x1,
-	'minimum': 0x50,
+	'minimum': 0x25,
 	'frequency': 0xbb8,
-	'enemies': ['SKELETON','BAT1'],
+	'enemies': ['SKELETON','BAT3'],
 	'events': [{
 		'eventType': 'PlayJellyfish',
 		'delay': 0x64,
@@ -65,17 +65,17 @@
 	}]
 }, {
 	'minute': 0x2,
-	'minimum': 0x64,
+	'minimum': 0x32,
 	'frequency': 0xfa0,
-	'enemies': ['BAT2', 'ECTO1'],
+	'enemies': ['SKELETON', 'ECTO1'],
 	'events': [{
 		'eventType': 'MEDUSA_WALL',
 		'moreX': 0x6,
-		'moreY': 'MEDUSA1'
+		'moreY': 'BAT3'
 	}, {
 		'eventType': 'MEDUSA_SWARM',
-		'moreX': 0xc,
-		'moreY': 'MEDUSA1',
+		'moreX': 0x12,
+		'moreY': 'BAT4',
 		'delay': 0x1388,
 		'chance': 0x46,
 		'repeat': 0x4
@@ -84,7 +84,7 @@
 	'minute': 0x3,
 	'minimum': 0x3c,
 	'frequency': 0xfa0,
-	'enemies': ['BAT1','BAT2','BAT3'],
+	'enemies': ['SKELETON', 'ECTO1', 'BAT3'],
 	'bosses': ['BAT4'],
 	'treasure': {
 		'chances': [0.1, 0x5, 0x64],
@@ -95,17 +95,18 @@
 	'minute': 0x4,
 	'minimum': 0x6e,
 	'frequency': 0xfa0,
-	'enemies': ['MUD', 'MUMMY']
+	'enemies': ['SKELETON', 'SKELETON2']
 }, {
 	'minute': 0x5,
 	'minimum': 0x64,
 	'frequency': 0xfa0,
-	'enemies': ['MUMMY'],
-	'bosses': ['XLMUMMY'],
+	'enemies': ['SKELETON3','SKELETON4'],
+	'bosses': ['XLBAT'],
 	'events': [{
-		'eventType': 'MEDUSA_WALL',
-		'moreX': 0xc,
-		'moreY': 'MEDUSA1_FAST'
+		'eventType': 'BAT_SWARM',
+		'delay': 0x1388,
+		'chance': 0x50,
+		'repeat': 0x5
 	}, {
 		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
@@ -121,8 +122,8 @@
 	}
 }, {
 	'minute': 0x6,
-	'minimum': 0x1e,
-	'frequency': 0x7d0,
+	'minimum': 0x3c,
+	'frequency': 0x3e8,
 	'enemies': ['DULL1', 'ECTO1','SHADEBLUE'],
 	'events': [{
 		'eventType': 'SHADE_BOMB_RED',
@@ -135,7 +136,7 @@
 	'minute': 0x7,
 	'minimum': 0x50,
 	'frequency': 0x1f4,
-	'enemies': ['DULL1', 'BAT3', 'ECTO2'],
+	'enemies': ['DULL1', 'XLBAT', 'ECTO2'],
 	'events': [{
 		'eventType': 'BAT_SWARM',
 		'delay': 0x1388,
@@ -169,7 +170,7 @@
 	'minute': 0xa,
 	'minimum': 0x64,
 	'frequency': 0x1f4,
-	'enemies': ['ECTO2','SHADEBLUE'],
+	'enemies': ['BOSS_ECTO','BUER','SHADEBLUE'],
 	'bosses': ['BOSS_BUER'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
@@ -199,7 +200,7 @@
 	'events': [{
 		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
-		'moreY': 'MEDUSA1_FAST'
+		'moreY': 'MEDUSA2_AGGRO'
 	}, {
 		'eventType': 'MEDUSA_WALL',
 		'moreX': 0xc,
@@ -208,7 +209,7 @@
 		'chance': 0x46,
 		'repeat': 0x5
 	}],
-	'bosses': ['BAT4'],
+	'bosses': ['BOSS_XLMEDUSA'],
 	'treasure': {
 		'chances': [0x1, 0x5, 0x32],
 		'level': 0x1,
@@ -250,7 +251,7 @@
 	'events': [{
 		'eventType': 'MEDUSA_WALL',
 		'moreX': 0xc,
-		'moreY': 'MEDUSA1_FAST'
+		'moreY': 'XLBAT'
 	}, {
 		'eventType': 'MEDUSA_WALL',
 		'moreX': 0x6,
@@ -259,7 +260,7 @@
 	}, {
 		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
-		'moreY': 'MEDUSA1_FAST',
+		'moreY': 'MEDUSA2_AGGRO',
 		'delay': 0x7d0,
 		'chance': 0x5a,
 		'repeat': 0x19
@@ -269,7 +270,7 @@
 	'minimum': 0x64,
 	'frequency': 0x3e8,
 	'enemies': ['WITCH1', 'DULL1', 'DULL2'],
-	'bosses': ['BAT4'],
+	'bosses': ['BAT5'],
 	'treasure': {
 		'chances': [0x1, 0x5, 0x32],
 		'level': 0x1,
@@ -371,7 +372,7 @@
 		'repeat': 0x19,
 		'moreX': 0x3
 	}],
-	'bosses': ['BAT4'],
+	'bosses': ['BAT5'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
 		'level': 0x1,
@@ -459,11 +460,11 @@
 	'events': [{
 		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
-		'moreY': 'MEDUSA2_FAST'
+		'moreY': 'BOSS_MEDUSA1'
 	}, {
 		'eventType': 'MEDUSA_WALL',
 		'moreX': 0xc,
-		'moreY': 'MEDUSA2_FAST',
+		'moreY': 'MEDUSA2_AGGRO',
 		'delay': 0x7d0,
 		'chance': 0x5a,
 		'repeat': 0x19
