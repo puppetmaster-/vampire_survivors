@@ -1,6 +1,6 @@
 # INSTALL
 
-! only for "VampireSurvivors" "0.2.13" !
+! testet for "VampireSurvivors" "v0.3.0c" !
 
 ## FILES
 - copy *mod* folder in the same location as the assets folder and main.bundle.js
