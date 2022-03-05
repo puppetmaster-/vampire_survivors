@@ -1,13 +1,14 @@
-[_0x26dcac['GARDEN']]: [{
+['GARDEN']: [{
 	'stageName': 'Secred Garden',
 	'description': 'The Garden of Eden no longer exists, but a cursedly narrow one does!',
 	'uiTexture': 'UI_GARDEN',
 	'uiFrame': 'stage_garden.png',
 	'frameName': 'stage_library_icon.png',
 	'frameNameUnlock': 'stage_library_unlock.png',
+	'stageNumber': 'Custom',
 	'unlocked': !0x0,
-	'BGM': _0x541371[_0x465e1a(0x132)],
-	'legacyBGM': _0x541371[_0x465e1a(0x132)],
+	'BGM': 'BGM_GreenAcres',
+	'legacyBGM': 'BGM_Library',
 	'tips': 'Enemies health +50%',
 	'hyperTips': '50% Gold bonus\n10% Luck bonus',
 	'mods': {
@@ -39,11 +40,11 @@
 		'mapPath': 'mod/garden/Garden.json',
 		'isTiling': !0x0
 	},
-	'spawnType': _0x423212['HORIZONTAL'],
+	'spawnType': 'HORIZONTAL',
 	'dayNight': !0x1,
 	'startingSpawns': 0x32,
 	'minute': 0x0,
-	'destructibleType': _0x521781[_0x465e1a(0x339)],
+	'destructibleType': 'CANDELABRA',
 	'destructibleFreq': 0x3e8,
 	'destructibleChance': 7.5,
 	'destructibleChanceMax': 0x32,
@@ -51,14 +52,14 @@
 	'BGTextureName': 'bg_forest',
 	'minimum': 0x32,
 	'frequency': 0xbb8,
-	'enemies': [_0x3a1056['BAT1'], _0x3a1056['BAT2'], _0x3a1056[_0x465e1a(0x6ea)]]
+	'enemies': ['BAT1', 'BAT2']
 }, {
 	'minute': 0x1,
 	'minimum': 0x50,
 	'frequency': 0xbb8,
-	'enemies': [_0x3a1056['SKELETON'],_0x3a1056['BAT1']],
+	'enemies': ['SKELETON','BAT1'],
 	'events': [{
-		'eventType': _0x3e2fd5['PlayJellyfish'],
+		'eventType': 'PlayJellyfish',
 		'delay': 0x64,
 		'moreX': 0x1
 	}]
@@ -66,15 +67,15 @@
 	'minute': 0x2,
 	'minimum': 0x64,
 	'frequency': 0xfa0,
-	'enemies': [_0x3a1056['BAT2'], _0x3a1056[_0x465e1a(0x4a8)]],
+	'enemies': ['BAT2', 'ECTO1'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x25d)],
+		'eventType': 'MEDUSA_WALL',
 		'moreX': 0x6,
-		'moreY': _0x3a1056['MEDUSA1']
+		'moreY': 'MEDUSA1'
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x6d5)],
+		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
-		'moreY': _0x3a1056[_0x465e1a(0x84b)],
+		'moreY': 'MEDUSA1',
 		'delay': 0x1388,
 		'chance': 0x46,
 		'repeat': 0x4
@@ -83,32 +84,32 @@
 	'minute': 0x3,
 	'minimum': 0x3c,
 	'frequency': 0xfa0,
-	'enemies': [_0x3a1056['BAT1'],_0x3a1056['BAT2'],_0x3a1056['BAT3']],
-	'bosses': [_0x3a1056['BAT4']],
+	'enemies': ['BAT1','BAT2','BAT3'],
+	'bosses': ['BAT4'],
 	'treasure': {
 		'chances': [0.1, 0x5, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'],_0x576679['EXISTING_ANY'], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION','EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x4,
 	'minimum': 0x6e,
 	'frequency': 0xfa0,
-	'enemies': [_0x3a1056['MUD'], _0x3a1056[_0x465e1a(0x175)]]
+	'enemies': ['MUD', 'MUMMY']
 }, {
 	'minute': 0x5,
 	'minimum': 0x64,
 	'frequency': 0xfa0,
-	'enemies': [_0x3a1056[_0x465e1a(0x175)]],
-	'bosses': [_0x3a1056[_0x465e1a(0x6f9)]],
+	'enemies': ['MUMMY'],
+	'bosses': ['XLMUMMY'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x25d)],
+		'eventType': 'MEDUSA_WALL',
 		'moreX': 0xc,
-		'moreY': _0x3a1056['MEDUSA1_FAST']
+		'moreY': 'MEDUSA1_FAST'
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x6d5)],
+		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
-		'moreY': _0x3a1056[_0x465e1a(0x84b)],
+		'moreY': 'MEDUSA1',
 		'delay': 0x1388,
 		'chance': 0x46,
 		'repeat': 0x5
@@ -116,15 +117,15 @@
 	'treasure': {
 		'chances': [0x1, 0x5, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'],_0x576679['EXISTING_WEAPON'], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY']]
+		'prizeTypes': ['EVOLUTION','EXISTING_WEAPON', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x6,
 	'minimum': 0x1e,
 	'frequency': 0x7d0,
-	'enemies': [_0x3a1056[_0x465e1a(0x356)], _0x3a1056[_0x465e1a(0x4a8),_0x3a1056['SHADEBLUE']]],
+	'enemies': ['DULL1', 'ECTO1','SHADEBLUE'],
 	'events': [{
-		'eventType': _0x3e2fd5['SHADE_BOMB_RED'],
+		'eventType': 'SHADE_BOMB_RED',
 		'delay': 0x2710,
 		'chance': 0x32,
 		'repeat': 0x4,
@@ -134,9 +135,9 @@
 	'minute': 0x7,
 	'minimum': 0x50,
 	'frequency': 0x1f4,
-	'enemies': [_0x3a1056[_0x465e1a(0xfc)], _0x3a1056['BAT3'], _0x3a1056[_0x465e1a(0x7ae)]],
+	'enemies': ['DULL1', 'BAT3', 'ECTO2'],
 	'events': [{
-		'eventType': _0x3e2fd5['BAT_SWARM'],
+		'eventType': 'BAT_SWARM',
 		'delay': 0x1388,
 		'chance': 0x50,
 		'repeat': 0x5
@@ -145,20 +146,20 @@
 	'minute': 0x8,
 	'minimum': 0x50,
 	'frequency': 0x3e8,
-	'enemies': [_0x3a1056[_0x465e1a(0x494)], _0x3a1056[_0x465e1a(0x5b2)]],
-	'bosses': [_0x3a1056['BOSS_ECTO']],
+	'enemies': ['ECTO2', 'GHOST'],
+	'bosses': ['BOSS_ECTO'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x32],
 		'level': 0x2,
-		'prizeTypes': [_0x576679['EVOLUTION'],_0x576679[_0x465e1a(0x5ac)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION','EXISTING_WEAPON', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x9,
 	'minimum': 0xc8,
 	'frequency': 0x1f4,
-	'enemies': [_0x3a1056[_0x465e1a(0x175)], _0x3a1056[_0x465e1a(0x5b2)]],
+	'enemies': ['MUMMY', 'GHOST'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x208)],
+		'eventType': 'SHADE_BOMB_RED',
 		'delay': 0x4e20,
 		'chance': 0x32,
 		'repeat': 0x2,
@@ -168,18 +169,18 @@
 	'minute': 0xa,
 	'minimum': 0x64,
 	'frequency': 0x1f4,
-	'enemies': [_0x3a1056[_0x465e1a(0x494)],_0x3a1056['SHADEBLUE']],
-	'bosses': [_0x3a1056[_0x465e1a(0x383)]],
+	'enemies': ['ECTO2','SHADEBLUE'],
+	'bosses': ['BOSS_BUER'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x5ac)], _0x576679[_0x465e1a(0x5ac)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_WEAPON', 'EXISTING_WEAPON']
 	},
 	'events': [{
-		'eventType': _0x3e2fd5['SHADE_BOMB_RED'],
+		'eventType': 'SHADE_BOMB_RED',
 		'moreX': 0x1
 	}, {
-		'eventType': _0x3e2fd5['SHADE_BOMB_RED'],
+		'eventType': 'SHADE_BOMB_RED',
 		'delay': 0x2710,
 		'chance': 0x50,
 		'repeat': 0x3,
@@ -189,76 +190,76 @@
 	'minute': 0xb,
 	'minimum': 0x78,
 	'frequency': 0x7d0,
-	'enemies': [_0x3a1056[_0x465e1a(0x133)], _0x3a1056['BUER']]
+	'enemies': ['MEDUSA2', 'BUER']
 }, {
 	'minute': 0xc,
 	'minimum': 0x50,
 	'frequency': 0x3e8,
-	'enemies': [_0x3a1056['MEDUSA2'], _0x3a1056[_0x465e1a(0x356)]],
+	'enemies': ['MEDUSA2', 'DULL1'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x6d5)],
+		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
-		'moreY': _0x3a1056['MEDUSA1_FAST']
+		'moreY': 'MEDUSA1_FAST'
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x25d)],
+		'eventType': 'MEDUSA_WALL',
 		'moreX': 0xc,
-		'moreY': _0x3a1056[_0x465e1a(0x84b)],
+		'moreY': 'MEDUSA1',
 		'delay': 0x1388,
 		'chance': 0x46,
 		'repeat': 0x5
 	}],
-	'bosses': [_0x3a1056['BAT4']],
+	'bosses': ['BAT4'],
 	'treasure': {
 		'chances': [0x1, 0x5, 0x32],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679['EXISTING_ANY']]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0xd,
 	'minimum': 0x78,
 	'frequency': 0x1f4,
-	'enemies': [_0x3a1056[_0x465e1a(0x175)], _0x3a1056[_0x465e1a(0x356)]],
-	'bosses': [_0x3a1056[_0x465e1a(0x723)]],
+	'enemies': ['MUMMY', 'DULL1'],
+	'bosses': ['BOSS_MUD'],
 	'treasure': {
 		'chances': [0x1, 0x5, 0x32],
 		'level': 0x1,
-		'prizeTypes': [_0x576679[_0x465e1a(0x5cc)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0xe,
 	'minimum': 0x12c,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056[_0x465e1a(0x175)], _0x3a1056[_0x465e1a(0x133)], _0x3a1056['ECTO2']],
-	'bosses': [_0x3a1056[_0x465e1a(0x4ca)]],
+	'enemies': ['MUMMY', 'MEDUSA2', 'ECTO2'],
+	'bosses': ['BAT5'],
 	'treasure': {
 		'chances': [0x1, 0x5, 0x32],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0xf,
 	'minimum': 0x64,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056[_0x465e1a(0x1b4)]],
-	'bosses': [_0x3a1056[_0x465e1a(0x3bd)]],
+	'enemies': ['MEDUSA2_AGGRO'],
+	'bosses': ['XLMEDUSA'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	},
 	'events': [{
-		'eventType': _0x3e2fd5['MEDUSA_WALL'],
+		'eventType': 'MEDUSA_WALL',
 		'moreX': 0xc,
-		'moreY': _0x3a1056['MEDUSA1_FAST']
+		'moreY': 'MEDUSA1_FAST'
 	}, {
-		'eventType': _0x3e2fd5['MEDUSA_WALL'],
+		'eventType': 'MEDUSA_WALL',
 		'moreX': 0x6,
-		'moreY': _0x3a1056[_0x465e1a(0x133)],
+		'moreY': 'MEDUSA2',
 		'delay': 0x32c8
 	}, {
-		'eventType': _0x3e2fd5['MEDUSA_SWARM'],
+		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
-		'moreY': _0x3a1056[_0x465e1a(0x788)],
+		'moreY': 'MEDUSA1_FAST',
 		'delay': 0x7d0,
 		'chance': 0x5a,
 		'repeat': 0x19
@@ -267,20 +268,20 @@
 	'minute': 0x10,
 	'minimum': 0x64,
 	'frequency': 0x3e8,
-	'enemies': [_0x3a1056['WITCH1'], _0x3a1056['DULL1'], _0x3a1056['DULL2']],
-	'bosses': [_0x3a1056['BAT4']],
+	'enemies': ['WITCH1', 'DULL1', 'DULL2'],
+	'bosses': ['BAT4'],
 	'treasure': {
 		'chances': [0x1, 0x5, 0x32],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679['EXISTING_ANY'], _0x576679['EXISTING_ANY']]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x11,
 	'minimum': 0xc8,
 	'frequency': 0x3e8,
-	'enemies': [_0x3a1056[_0x465e1a(0x37b)], _0x3a1056[_0x465e1a(0x494)], _0x3a1056[_0x465e1a(0x4a8)]],
+	'enemies': ['WITCH1', 'ECTO2', 'ECTO1'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x208)],
+		'eventType': 'SHADE_BOMB_RED',
 		'delay': 0x1388,
 		'chance': 0x32,
 		'repeat': 0x4,
@@ -290,179 +291,179 @@
 	'minute': 0x12,
 	'minimum': 0x3c,
 	'frequency': 0x1f4,
-	'enemies': [_0x3a1056['WITCH1'], _0x3a1056['BUER']],
-	'bosses': [_0x3a1056['BOSS_WITCH2']],
+	'enemies': ['WITCH1', 'BUER'],
+	'bosses': ['BOSS_WITCH2'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x50],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x13,
 	'minimum': 0x78,
 	'frequency': 0x1f4,
-	'enemies': [_0x3a1056[_0x465e1a(0x37b)], _0x3a1056[_0x465e1a(0x7c6)]],
-	'bosses': [_0x3a1056['BOSS_WITCH2']],
+	'enemies': ['WITCH1', 'DULL2'],
+	'bosses': ['BOSS_WITCH2'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x50],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x14,
 	'minimum': 0x64,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056[_0x465e1a(0x388)], _0x3a1056['DULL2']],
-	'bosses': [_0x3a1056['BOSS_COUNT2']],
+	'enemies': ['BUER', 'DULL2'],
+	'bosses': ['BOSS_COUNT2'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x208)],
+		'eventType': 'SHADE_BOMB_RED',
 		'delay': 0x7d0,
 		'chance': 0x32,
 		'repeat': 0x19,
 		'moreX': 0x2
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'moreX': 0x1
 	}, {
-		'eventType': _0x3e2fd5['SKULL_SWARM'],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0x1388,
 		'moreX': 0x2
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0x3a98,
 		'moreX': 0x4
 	}, {
-		'eventType': _0x3e2fd5['SKULL_SWARM'],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0x61a8,
 		'moreX': 0x8
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0x88b8,
 		'moreX': 0x10
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0xafc8,
 		'moreX': 0x20
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0xd6d8,
 		'moreX': 0x20
 	}],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679[_0x465e1a(0x5cc)], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x15,
 	'minimum': 0x64,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056['BUER']]
+	'enemies': ['BUER']
 }, {
 	'minute': 0x16,
 	'minimum': 0x50,
 	'frequency': 0x3e8,
-	'enemies': [_0x3a1056['WITCH2'], _0x3a1056[_0x465e1a(0x388)]],
+	'enemies': ['WITCH2', 'BUER'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x208)],
+		'eventType': 'SHADE_BOMB_RED',
 		'delay': 0x7d0,
 		'chance': 0x32,
 		'repeat': 0x19,
 		'moreX': 0x3
 	}],
-	'bosses': [_0x3a1056['BAT4']],
+	'bosses': ['BAT4'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x17,
 	'minimum': 0x78,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056[_0x465e1a(0x356)], _0x3a1056['DULL2'], _0x3a1056['WITCH2']],
-	'bosses': [_0x3a1056[_0x465e1a(0x383)]],
+	'enemies': ['DULL1', 'DULL2', 'WITCH2'],
+	'bosses': ['BOSS_BUER'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679[_0x465e1a(0x5cc)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x18,
 	'minimum': 0x12c,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056['WITCH2']]
+	'enemies': ['WITCH2']
 }, {
 	'minute': 0x19,
 	'minimum': 0x12c,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056[_0x465e1a(0x519)], _0x3a1056['WITCH2'], _0x3a1056['XLBAT']],
-	'bosses': [_0x3a1056['BOSS_COUNT1']],
+	'enemies': ['SKULL2', 'WITCH2', 'XLBAT'],
+	'bosses': ['BOSS_COUNT1'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x54b)]
+		'eventType': 'BAT_SWARM'
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'moreX': 0x1
 	}, {
-		'eventType': _0x3e2fd5['SKULL_SWARM'],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0x1388,
 		'moreX': 0x2
 	}, {
-		'eventType': _0x3e2fd5['SKULL_SWARM'],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0x3a98,
 		'moreX': 0x4
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0x61a8,
 		'moreX': 0x8
 	}, {
-		'eventType': _0x3e2fd5['SKULL_SWARM'],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0x88b8,
 		'moreX': 0x10
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0xafc8,
 		'moreX': 0x20
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x400)],
+		'eventType': 'SKULL_SWARM',
 		'delay': 0xd6d8,
 		'moreX': 0x20
 	}],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679['EXISTING_ANY'], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY']]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x1a,
 	'minimum': 0x64,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056[_0x465e1a(0x2f5)]],
-	'bosses': [_0x3a1056['BOSS_XLMEDUSA']],
+	'enemies': ['XLMEDUSA'],
+	'bosses': ['BOSS_XLMEDUSA'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x32],
 		'level': 0x1,
-		'prizeTypes': [_0x576679[_0x465e1a(0x5cc)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY']]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x1b,
 	'minimum': 0x12c,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056['MEDUSA2'], _0x3a1056['XLMEDUSA']],
-	'bosses': [_0x3a1056['BOSS_XLMEDUSA']],
+	'enemies': ['MEDUSA2', 'XLMEDUSA'],
+	'bosses': ['BOSS_XLMEDUSA'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x32],
 		'level': 0x1,
-		'prizeTypes': [_0x576679['EVOLUTION'], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	},
 	'events': [{
-		'eventType': _0x3e2fd5['MEDUSA_SWARM'],
+		'eventType': 'MEDUSA_SWARM',
 		'moreX': 0xc,
-		'moreY': _0x3a1056[_0x465e1a(0x1dd)]
+		'moreY': 'MEDUSA2_FAST'
 	}, {
-		'eventType': _0x3e2fd5[_0x465e1a(0x25d)],
+		'eventType': 'MEDUSA_WALL',
 		'moreX': 0xc,
-		'moreY': _0x3a1056['MEDUSA2_FAST'],
+		'moreY': 'MEDUSA2_FAST',
 		'delay': 0x7d0,
 		'chance': 0x5a,
 		'repeat': 0x19
@@ -471,20 +472,20 @@
 	'minute': 0x1c,
 	'minimum': 0x12c,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056['WITCH1'], _0x3a1056['BOSS_MEDUSA1']],
-	'bosses': [_0x3a1056[_0x465e1a(0x3bd)]],
+	'enemies': ['WITCH1', 'BOSS_MEDUSA1'],
+	'bosses': ['BOSS_XLMEDUSA'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
 		'level': 0x1,
-		'prizeTypes': [_0x576679[_0x465e1a(0x5cc)], _0x576679['EXISTING_ANY'], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)], _0x576679[_0x465e1a(0x683)]]
+		'prizeTypes': ['EVOLUTION', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY', 'EXISTING_ANY']
 	}
 }, {
 	'minute': 0x1d,
 	'minimum': 0x12c,
 	'frequency': 0x64,
-	'enemies': [_0x3a1056['BOSS_MUD'], _0x3a1056[_0x465e1a(0x70c)], _0x3a1056[_0x465e1a(0x383)], _0x3a1056[_0x465e1a(0x4b5)]],
+	'enemies': ['BOSS_MUD', 'BOSS_ECTO', 'BOSS_XLBAT', 'BOSS_MEDUSA1'],
 	'events': [{
-		'eventType': _0x3e2fd5[_0x465e1a(0x208)],
+		'eventType': 'SHADE_BOMB_RED',
 		'delay': 0x3e8,
 		'chance': 0x3c,
 		'repeat': 0x32,
@@ -495,8 +496,8 @@
 	'minimum': 0x1,
 	'frequency': 0x2710,
 	'enemies': [],
-	'bosses': [_0x3a1056[_0x465e1a(0x547)]],
+	'bosses': ['BOSS_XLDEATH'],
 	'events': [{
-		'eventType': _0x3e2fd5['ERASE_ENEMIES']
+		'eventType': 'ERASE_ENEMIES'
 	}]
 }],
