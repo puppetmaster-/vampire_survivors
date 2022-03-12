@@ -1,6 +1,6 @@
 # INSTALL
 
-! testet for "VampireSurvivors" "v0.3.0c" !
+! testet for "VampireSurvivors" "v0.3.1c" !
 
 ## PREPARATION
 It is not absolutely necessary but simplifies the insertion of the UI and MAP code.
