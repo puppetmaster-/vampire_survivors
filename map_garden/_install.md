@@ -1,7 +1,5 @@
 # INSTALL
 
-! testet for "VampireSurvivors" "v0.3.1c" !
-
 ## PREPARATION
 It is not absolutely necessary but simplifies the insertion of the UI and MAP code.
 - open *main.bundle.js* with a text editor of your choice (Windows nodepad isn't the ideal editor for this usecase)
