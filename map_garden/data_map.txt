@@ -360,7 +360,7 @@
 }, {
 	'minute': 0x15,
 	'minimum': 0x1,
-	'frequency': 0x10,
+	'frequency': 0x20,
 	'enemies': ['BOSS_XLBAT'],
 	'events': [{
 		'eventType': 'BAT_SWARM',
@@ -485,7 +485,7 @@
 	'bosses': ['BOSS_XLMEDUSA']
 }, {
 	'minute': 0x1d,
-	'minimum': 0x96,
+	'minimum': 0x4B,
 	'frequency': 0x64,
 	'enemies': ['BOSS_MUD', 'BOSS_ECTO', 'BOSS_XLBAT', 'BOSS_MEDUSA1'],
 	'events': [{
