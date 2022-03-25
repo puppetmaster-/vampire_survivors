@@ -1,6 +1,6 @@
 # vampire_survivors
 
-! testet for "VampireSurvivors" "v0.3.1c" !
+! testet for "VampireSurvivors" "v0.3.2b" !
 
 ## SECRET GARDEN MAP
 ![map_selection](https://user-images.githubusercontent.com/10463138/156895308-04ff94ea-3dad-452c-a12b-372fc0dd2604.png)
