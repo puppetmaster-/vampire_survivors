@@ -16,7 +16,8 @@
 		'EnemySpeed': 1.25,
 		'ProjectileSpeed': 0x1,
 		'GoldMultiplier': 0x1,
-		'EnemyHealth': 1.4
+		'EnemyHealth': 1.4,
+		'tips': ''
 	},
 	'hyper': {
 		'unlocked': !0x0,
@@ -31,7 +32,8 @@
 		'BGM_rate': 1.25,
 		'BGM_detune': 0x64,
 		'BGM_ignoreModsForNewSoundtrack': !0x1,
-		'BGM_new_rate': 1.0625
+		'BGM_new_rate': 1.0625,
+		'tips': ''
 	},
 	'tileset': {
 		'setKey': 'GardenTexturePacked',
