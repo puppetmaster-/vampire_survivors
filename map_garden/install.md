@@ -51,7 +51,14 @@ _formated_
 - save
 - test if game can load main.bundle.js, 
 	if you get a black screen, just undo the change with ctrl+z and check again if it is the right place.
+## add Hurry! mode
+This modification does not necessarily have to be implemented. The map works anyway.
 
+To activate the Hurry! mode for the custom maps, you have to add the map name to a certain function.
+
+The place of the function looks like this:
+
+![image](https://user-images.githubusercontent.com/10463138/162307872-802f9d7f-f8a0-433e-803c-5089d6df82e9.png)
 ## tileset used
 - Bokou https://forums.rpgmakerweb.com/index.php?threads/bokous-freesources-added-gothic-tileset.48613/
 - Anokolisa https://anokolisa.itch.io/high-forest-assets-pack
