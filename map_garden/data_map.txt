@@ -12,6 +12,8 @@
 	'tips': 'Enemies health +50%',
 	'hyperTips': '50% Gold bonus\n10% Luck bonus',
 	'mods': {
+		'TimeLimit': 0x708,
+		'ClockSpeed': 0x1,
 		'PlayerPxSpeed': 1.25,
 		'EnemySpeed': 1.25,
 		'ProjectileSpeed': 0x1,
@@ -21,6 +23,8 @@
 	},
 	'hyper': {
 		'unlocked': !0x0,
+		'TimeLimit': 0x708,
+		'ClockSpeed': 0x1,
 		'PlayerPxSpeed': 1.9,
 		'EnemySpeed': 1.9,
 		'ProjectileSpeed': 1.15,
