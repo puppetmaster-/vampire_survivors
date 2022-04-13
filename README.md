@@ -6,7 +6,7 @@
 ![map_selection](https://user-images.githubusercontent.com/10463138/156895308-04ff94ea-3dad-452c-a12b-372fc0dd2604.png)
 ![image](https://user-images.githubusercontent.com/10463138/156249225-5da0fcf5-efd0-4135-bb05-7de2949c6bba.png)
 
-The installation instructions are available here https://github.com/puppetmaster-/vampire_survivors/blob/main/map_garden/_install.md
+The installation instructions are available here https://github.com/puppetmaster-/vampire_survivors/blob/main/map_garden/install.md
 
 The latest version can be downloaded under release https://github.com/puppetmaster-/vampire_survivors/releases
 
