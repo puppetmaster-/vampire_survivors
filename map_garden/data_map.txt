@@ -377,7 +377,7 @@
 	'minute': 0x16,
 	'minimum': 0x50,
 	'frequency': 0x3e8,
-	'enemies': ['ARMOR', 'ARMORSPEAR'],
+	'enemies': ['ARMOR', 'ARMORSPEAR_6'],
 	'events': [{
 		'eventType': 'SHADE_BOMB_RED',
 		'delay': 0x7d0,
@@ -395,7 +395,7 @@
 	'minute': 0x17,
 	'minimum': 0x78,
 	'frequency': 0x64,
-	'enemies': ['ARMOR', 'ARMORSPEAR', 'XLBAT'],
+	'enemies': ['ARMOR', 'ARMORSPEAR_6', 'XLBAT'],
 	'bosses': ['BOSS_BUER'],
 	'treasure': {
 		'chances': [0x3, 0xa, 0x64],
