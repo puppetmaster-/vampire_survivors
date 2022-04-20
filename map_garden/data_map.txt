@@ -1,5 +1,5 @@
 ['GARDEN']: [{
-	'stageName': 'Secred Garden',
+	'stageName': 'Secret Garden',
 	'description': 'The Garden of Eden no longer exists, but a cursedly narrow one does!',
 	'uiTexture': 'UI_GARDEN',
 	'uiFrame': 'stage_garden.png',
